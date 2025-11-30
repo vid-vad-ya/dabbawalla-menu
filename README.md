@@ -15,4 +15,11 @@ Day 1: Setup complete.
 ## Files
 - menu.json
 
+## Day 2 Progress
+- Created Vite React app
+- Cleaned boilerplate
+- Added initial component/page folders
+- Moved menu.json into src/data
+- Pushed via feature branch and opened PR
+
 
