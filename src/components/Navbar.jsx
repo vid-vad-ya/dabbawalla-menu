@@ -5,8 +5,8 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <div className="brand">ByteMeals</div>
-        <div style={{ flex: 1 }} />
+        <div className="brand">ByteMeals 🍱</div>
+
         <Link className="nav-link" to="/">Home</Link>
         <Link className="nav-link" to="/menu">Menu</Link>
         <Link className="nav-link" to="/order">Order</Link>

@@ -1,11 +1,25 @@
 button {
-  padding: 10px 16px;
-  border-radius: 8px;
-  border: 1px solid #dcdcdc;
-  background: #fff;
-  font-size: 14px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 14px;
+  background: #ffe2c6;
+  font-size: 15px;
   cursor: pointer;
-  transition: transform .12s ease, background .12s;
+  transition: 0.25s;
+  color: #3d2b1f;
 }
-button:hover { background:#f7f7f7; }
-.active-btn { background:#111; color:#fff; border-color:#111; }
+
+button:hover {
+  background: #ffd2a3;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+.active-btn {
+  background: linear-gradient(135deg, #ff8b42, #ff6f00);
+  color: white;
+  font-weight: 600;
+}

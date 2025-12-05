@@ -1,33 +1,80 @@
-.filters { display:flex; gap:12px; margin-bottom:18px; flex-wrap:wrap; }
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+/* SEARCH BAR */
 .search-input {
-  padding: 12px 14px;
   width: 360px;
-  border-radius: 10px;
-  border: 1px solid #e0e0e0;
-  background: #fafafa;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid #ffd8b3;
+  background: #fff4ea;
   font-size: 15px;
+  margin-bottom: 22px;
+  transition: 0.25s;
 }
-.search-input:focus { outline: none; border-color:#bbb; background:#fff; }
 
-/* grid / card */
-.menu-grid { display:flex; flex-wrap:wrap; gap:20px; margin-top:18px; align-items:flex-start; }
+.search-input:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: #ffad66;
+}
+
+/* GRID */
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+/* CARD */
 .menu-card {
-  width: 280px;
-  background:#fff;
-  border-radius:12px;
-  overflow:hidden;
-  border:1px solid #eee;
-  box-shadow: 0 4px 14px rgba(0,0,0,.06);
-  cursor:pointer;
-  transition: transform .15s, box-shadow .15s;
+  width: 260px;
+  border-radius: 22px;
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(255,140,66,0.18);
+  cursor: pointer;
+  transition: 0.3s ease;
 }
-.menu-card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(0,0,0,.10); }
-.card-media img { width:100%; height:170px; object-fit:cover; display:block; }
-.card-body { padding:14px; }
-.card-body h3 { margin:0 0 6px; font-size:18px; font-weight:700; }
-.card-body .price { color:#444; margin-bottom:6px; }
-.card-body .veg { font-weight:700; }
 
-/* modal */
-.modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,0.45); display:flex; align-items:center; justify-content:center; z-index:1000; }
-.modal { width:420px; background:#fff; border-radius:10px; padding:16px; box-shadow: 0 12px 40px rgba(0,0,0,0.25); }
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 34px rgba(255,140,66,0.3);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 22px 22px 0 0;
+}
+
+.menu-card h3 {
+  margin: 12px 16px 4px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3d2b1f;
+}
+
+.menu-card .price {
+  margin-left: 16px;
+  color: #5a4a42;
+  font-weight: 500;
+}
+
+.menu-card .veg {
+  margin-left: 16px;
+  font-weight: 700;
+}
+
+.menu-card .veg.green {
+  color: #1da150;
+}
+
+.menu-card .veg.red {
+  color: #d94141;
+}
