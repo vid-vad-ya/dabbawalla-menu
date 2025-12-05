@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
+import "../styles/navbar.css";
 
 export default function Navbar() {
   return (
-    <nav style={{ padding: "10px", background: "#eee" }}>
-      <Link to="/">Home</Link> |{" "}
-      <Link to="/menu">Menu</Link> |{" "}
-      <Link to="/order">Order</Link> |{" "}
-      <Link to="/admin">Admin</Link>
+    <nav className="navbar">
+      <div className="nav-container">
+        <div className="brand">ByteMeals</div>
+        <div style={{ flex: 1 }} />
+        <Link className="nav-link" to="/">Home</Link>
+        <Link className="nav-link" to="/menu">Menu</Link>
+        <Link className="nav-link" to="/order">Order</Link>
+        <Link className="nav-link" to="/admin">Admin</Link>
+      </div>
     </nav>
   );
 }

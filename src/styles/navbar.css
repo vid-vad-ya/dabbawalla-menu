@@ -1,0 +1,5 @@
+.navbar { width:100%; background:#fff; border-bottom:1px solid #eee; padding:12px 0; position:sticky; top:0; z-index:10; }
+.nav-container { max-width:1200px; margin:0 auto; display:flex; align-items:center; gap:20px; }
+.brand { font-weight:700; font-size:18px; color:#111; }
+.nav-link { color:#333; font-size:15px; margin-left:8px; }
+.nav-link:hover { color:#000; text-decoration:underline; }

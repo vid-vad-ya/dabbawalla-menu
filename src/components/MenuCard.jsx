@@ -1,31 +1,17 @@
-export default function MenuCard({ name, price, veg, image }) {
+export default function MenuCard({ item, onClick }) {
   return (
-    <div className="menu-card" style={{
-      border: "1px solid #ccc",
-      padding: "12px",
-      borderRadius: "8px",
-      width: "240px"
-    }}>
-      <img 
-        src={image}
-        alt={name}
-        style={{
-          width: "100%",
-          height: "150px",
-          objectFit: "cover",
-          borderRadius: "6px"
-        }} 
-      />
+    <article className="menu-card" onClick={onClick} role="button" tabIndex={0}>
+      <div className="card-media">
+        <img src={item.image} alt={item.name} />
+      </div>
 
-      <h3 style={{ marginTop: "8px" }}>{name}</h3>
-      <p>₹{price}</p>
-
-      <p style={{ 
-        color: veg ? "green" : "red", 
-        fontWeight: "bold" 
-      }}>
-        {veg ? "Veg" : "Non‑Veg"}
-      </p>
-    </div>
+      <div className="card-body">
+        <h3>{item.name}</h3>
+        <p className="price">₹{item.price}</p>
+        <p className="veg" style={{ color: item.veg ? "green" : "red", fontWeight: 600 }}>
+          {item.veg ? "Veg" : "Non‑Veg"}
+        </p>
+      </div>
+    </article>
   );
 }

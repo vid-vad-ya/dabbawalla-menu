@@ -1,26 +1,20 @@
 import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
-import OrderForm from "./pages/OrderForm";
+import Order from "./pages/Order";
 import Admin from "./pages/Admin";
-import NotFound from "./pages/NotFound";
-import Navbar from "./components/Navbar";
 
-
-function App() {
+export default function App() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/menu" element={<Menu />} />
-      <Route path="/order" element={<OrderForm />} />
-      <Route path="/admin" element={<Admin />} />
-      <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/order" element={<Order />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </>
-   
   );
 }
-
-export default App;
